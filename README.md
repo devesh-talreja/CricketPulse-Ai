@@ -6,8 +6,8 @@
 ## 🔗 Live Access
 > ⚠️ **Notice:** Public live links are currently inactive to prevent free-tier API exhaustion. To explore the bot and dashboard, please follow the **Local Development & Extension** guide below!
 
-* **📱 Telegram Bot:** [CricketPulse_Bot](https://t.me/CricketPulse_Bot) 
-* **🌐 Web Dashboard:** [Live War Room](https://cricket-pulse-ai.streamlit.app/)
+* **📱 Telegram Bot:** [CricketPulse_Bot](https://t.me/CricketPulse_Bot) — Start chatting immediately for live insights.
+* **🌐 Web Dashboard:** [Live War Room](https://cricket-pulse-ai.streamlit.app/) — View the tactical dashboard in your browser.
 
 ---
 
