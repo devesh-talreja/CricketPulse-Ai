@@ -4,8 +4,10 @@
 **CricketPulse AI** entirely reimagines what a cricket bot can be. It is a multimodal, agentic intelligence layer that sits on top of raw live cricket APIs. By utilizing *Google Gemini 2.0 Flash*, CricketPulse delivers dynamic tactical forecasts, non-ML algorithmic momentum analysis, counterfactual wargaming, and localized cross-modal voice generations—served simultaneously across a Telegram Bot and a highly-visual Streamlit Web Dashboard.
 
 ## 🔗 Live Access
-* **📱 Telegram Bot:** [CricketPulse_Bot](https://t.me/CricketPulse_Bot) — Start chatting immediately for live insights.
-* **🌐 Web Dashboard:** [Live War Room](https://cricket-pulse-ai.streamlit.app/) — View the tactical dashboard in your browser.
+> ⚠️ **Notice:** Public live links are currently inactive to prevent free-tier API exhaustion. To explore the bot and dashboard, please follow the **Local Development & Extension** guide below!
+
+* **📱 Telegram Bot:** [CricketPulse_Bot](https://t.me/CricketPulse_Bot) 
+* **🌐 Web Dashboard:** [Live War Room](https://cricket-pulse-ai.streamlit.app/)
 
 ---
 
