@@ -3,9 +3,11 @@
 
 **CricketPulse AI** entirely reimagines what a cricket bot can be. It is a multimodal, agentic intelligence layer that sits on top of raw live cricket APIs. By utilizing *Google Gemini 2.0 Flash*, CricketPulse delivers dynamic tactical forecasts, non-ML algorithmic momentum analysis, counterfactual wargaming, and localized cross-modal voice generations—served simultaneously across a Telegram Bot and a highly-visual Streamlit Web Dashboard.
 
-## 🔗 Quick Access Links
-* **📱 Telegram Agent Bot:** [Click Here to Start Chatting](https://t.me/CricketPulse_Bot) 
-* **🌐 Strategy Web Dashboard:** [http://localhost:8501](http://localhost:8501) *(Launch locally using the deployment steps below)*
+## 🔗 Live Access
+* **📱 Telegram Bot:** [CricketPulse_Bot](https://t.me/CricketPulse_Bot) — Start chatting immediately for live insights.
+* **🌐 Web Dashboard:** [Live War Room](https://cricket-pulse-ai.streamlit.app/) — View the tactical dashboard in your browser.
+
+---
 
 ---
 
@@ -52,7 +54,9 @@ An impossibly fast conversational interface that brings the tactical coach to yo
 - **Frontend / Visualization:** Streamlit, Python-Telegram-Bot
 - **TTS Synthesis:** Google Text-to-Speech (`gTTS`)
 
-## ⚙️ Usage and Installation
+## 💻 Local Development & Extension
+
+If you'd like to extend CricketPulse AI or run a private instance:
 
 1. **Clone the Repository:**
    ```bash
@@ -66,22 +70,26 @@ An impossibly fast conversational interface that brings the tactical coach to yo
    ```
 
 3. **Configure Environment:**
-   Create a `.env` file in the root directory containing your API tokens:
+   Create a `.env` file in the root directory:
    ```env
    TELEGRAM_TOKEN=your_telegram_bot_token
    GEMINI_API_KEY=your_gemini_api_key
    CRICKET_API_KEY=your_cricapi_key
    ```
 
-4. **Launch the Services:**
-   Start the Agentic Telegram Bot (Terminal 1):
-   ```bash
-   python bot.py
-   ```
-   Start the Streamlit Ops Dashboard (Terminal 2):
-   ```bash
-   streamlit run app.py
-   ```
+4. **Run Locally:**
+   * **Telegram Bot:** `python bot.py`
+   * **Web Dashboard:** `streamlit run app.py`
+
+## ☁️ Deployment Guide (Web Dashboard)
+
+To host your own public version of the web dashboard for free:
+
+### Streamlit Community Cloud
+1. Push your code to your GitHub repository.
+2. Sign in to [Streamlit Cloud](https://share.streamlit.io/).
+3. Click "New app", select your repo, and set `app.py` as the main file.
+4. Add your `.env` variables (tokens) in the **"Secrets"** section of the Streamlit dashboard settings. This allows the dashboard to be accessible via a public URL without requiring any local setup from your users.
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/devesh-talreja/CricketPulse-Ai/issues).
