@@ -114,9 +114,20 @@ To host your own public version of the web dashboard for free:
 3. Click "New app", select your repo, and set `app.py` as the main file.
 4. Add your `.env` variables (tokens) in the **"Secrets"** section of the Streamlit dashboard settings. This allows the dashboard to be accessible via a public URL without requiring any local setup from your users.
 
-## 🗺️ Roadmap & Future Features
+---
 
-While this MVP was built under tight constraints to establish a robust, rate-limit-resilient architecture, it serves as the foundation for a much larger system. The future roadmap focuses on expanding CricketPulse's agentic capabilities, enhancing the conversational UX, and making the system fully stateful—all utilizing a zero-cost cloud-native stack.
+## 🗺️ Future Plans & Features
+
+> This project started as a quick hackathon MVP to prove agentic AI can handle live cricket data without hitting strict API limits. We're now scaling it into a smarter, more resilient ecosystem using a completely zero-cost cloud stack. If you have ideas or want to experiment, jump in!
+
+* **Distributed Memory (Upstash Redis):** Migrating our local cache to a free serverless Redis database so the bot remembers the match context and "Sledge Wall" even after server restarts.
+* **Realistic AI Voices (`edge-tts`):** Upgrading from standard `gTTS` to Microsoft's `edge-tts` for highly expressive, sarcastic audio roasts with unlimited, free usage.
+* **Interactive Bot UI:** Swapping manual text commands for clickable Telegram inline keyboards (e.g., `[🏏 Live Score]`, `[🔥 Roast]`) for a much smoother mobile experience.
+* **Fan Bias Mode (`/myteam`):** Allowing users to set their favorite team, prompting the AI coach to heavily bias its tactical advice and banter in their favor.
+* **Automated Momentum Alerts:** Running background tasks on the local win-probability engine to automatically push "CRITICAL SHIFT" notifications when a game turns sharply.
+* **Rain Delay Handling:** Adding fallback logic to detect paused matches, triggering cricket trivia or bored AI banter instead of fetching stagnant API data.
+* **Asynchronous Processing:** Offloading I/O-heavy tasks (like audio generation) to background workers so multiple users can interact with the bot simultaneously without lag.
+* **Historical RAG (Pinecone):** Connecting a free serverless vector database to store past match stats, letting the AI answer complex venue-specific or head-to-head queries.
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/devesh-talreja/CricketPulse-Ai/issues).
