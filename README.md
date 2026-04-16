@@ -114,6 +114,10 @@ To host your own public version of the web dashboard for free:
 3. Click "New app", select your repo, and set `app.py` as the main file.
 4. Add your `.env` variables (tokens) in the **"Secrets"** section of the Streamlit dashboard settings. This allows the dashboard to be accessible via a public URL without requiring any local setup from your users.
 
+## 🗺️ Roadmap & Future Features
+
+While this MVP was built under tight constraints to establish a robust, rate-limit-resilient architecture, it serves as the foundation for a much larger system. The future roadmap focuses on expanding CricketPulse's agentic capabilities, enhancing the conversational UX, and making the system fully stateful—all utilizing a zero-cost cloud-native stack.
+
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/devesh-talreja/CricketPulse-Ai/issues).
 
